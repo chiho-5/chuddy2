@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Chatbot "./chatbot";
+import Chatbot from "./chatbot";
 
 export default function App() {
   return(
