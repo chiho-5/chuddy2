@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 const BotRedirect = ([ url, message]) => {
   return(
   <div>
-  <a href {url} target "_blank">
+  <a href={url} target="_blank">
     {messages}
  </a>
 </div>
