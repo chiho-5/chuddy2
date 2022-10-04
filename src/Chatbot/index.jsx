@@ -1,5 +1,5 @@
 import React from "react";
-import Chatbot from "react-simple-chatbot";
+import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 
 
@@ -7,7 +7,7 @@ const BotRedirect = ([ url, message]) => {
   return(
   <div>
   <a href={url} target="_blank">
-    {messages}
+    {message}
  </a>
 </div>
 ); };
@@ -23,7 +23,7 @@ const CHATBOT_THEME = {
   userFontColor: "#fff"
   };
      
- const ChatBottHelper = () => {
+ const ChatBotHelper = () => {
    const steps = [
      {
        id: "1",
