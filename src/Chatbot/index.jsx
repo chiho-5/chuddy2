@@ -32,7 +32,7 @@ const CHATBOT_THEME = {
      },
      {
        id: "2",
-       message: "An AI assisted teacher and friend",
+       message: "Think of me as a friend",
        trigger: "3"
       },
      {
@@ -43,7 +43,43 @@ const CHATBOT_THEME = {
      {
        id: "4",
        options:[
-         
+         {value: 1,label: "sign up",trigger:"5"},
+         {value: 2,label: "Sign in", trigger:"6"}
+        ]
+       },
+    {
+     id: "5",
+      component: (
+        <BotRedirect
+          message="Get started"
+          url="https://lucasbassetti.com.br/react-simple-chatbot/#/docs/previous-value"
+        />
+      ),
+      trigger: ""
+    },
+    {
+      id: "6",
+      component: (
+        <BotRedirect
+          message="returning customer"
+          url="https://lucasbassetti.com.br/react-simple-chatbot/#/docs/chatbot"
+        />
+      ),
+      trigger: ""
+    }
+  ];
+
+  return (
+    <>
+      <ThemeProvider theme={CHATBOT_THEME}>
+        <ChatBot steps={steps} floating={true} />
+      </ThemeProvider>
+    </>
+  );
+};
+
+export default ChatBotHelper;
+
        
      
        
